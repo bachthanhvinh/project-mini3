@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project_mini3</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="search" class="js-search">
+      <input type="text" name="" id="" class="search-input" />
+      <button class="btn-search">Search</button>
+    </div>
+
+    <h2>Danh mục sản phẩm</h2>
+    <div id="category" class="js-category-list"></div>
+    <h2>Danh sách sản phẩm</h2>
+
+    <select id="js-sort">
+      <option value="mac-dinh">Mặc định</option>
+      <option value="gia-thap-den-cao">Giá Thấp đến cao</option>
+      <option value="gia-cao-den-thap">Giá cao đến thấp</option>
+      <option value="giam-gia-nhieu">Giám giá nhiều</option>
+    </select>
+
+    <div id="product" class="js-product-list"></div>
+
+    <div id="paginate" class="paginate-list">
+      <button class="page__btn--left page__btn">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <div class="page__number">1</div>
+      <button class="page__btn--right page__btn">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <script type="module" src="script/product.js"></script>
+    <script type="module" src="script/category.js"></script>
+  </body>
+</html>
